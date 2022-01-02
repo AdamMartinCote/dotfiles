@@ -1,0 +1,21 @@
+alias g=git
+alias tf=terraform
+alias t=tree
+alias p=popd
+alias cat=batcat
+alias dc=docker-compose
+alias find=fdfind
+
+code_path=/home/adam/Code
+
+function cdc () {
+	cd "${code_path}/${1}"
+}
+
+# zsh auto-completion
+# ref: https://zsh.sourceforge.io/Doc/Release/Completion-System.html#Completion-System
+function _cdc {
+	_path_files -W "${code_path}"
+}
+
+compdef _cdc cdc

@@ -1,0 +1,67 @@
+[color]
+	ui = auto
+[core]
+	# Don't consider trailing space change as a cause for merge conflicts
+	whitespace = -trailing-space
+
+	editor = vim
+
+	autocrlf = input
+	eol = lf
+
+[diff]
+	# Use better, descriptive initials (c[ommit], i[ndex], w[orking dir]) instead of a/b.
+	mnemonicPrefix = true
+	rename = true
+	tool = meld
+
+[push]
+	default = upstream
+
+[pull]
+	ff = only
+
+[user]
+	name = Adam
+	email = me@adammartincote.com
+
+[help]
+	autocorrect = 10
+
+[alias]
+	l = log \
+		--graph \
+        	--oneline
+	s = status
+	b = branch
+	c = commit
+	a = add
+	d = diff
+	hide = update-index --assume-unchanged
+	unhide = update-index --no-assume-unchanged
+	unhide-all = update-index --really-refresh
+	hidden = !git ls-files -v | grep \"^[a-z]\"
+	ignored = !git status -s --ignored | grep \"^!!\"
+[merge]
+	tool = meld
+[difftool]
+	prompt = false
+
+# CodeCommit credential helper example
+#[credential "https://git-codecommit.ca-central-1.amazonaws.com/v1/repos/<repo-name>/"]
+#	helper = !aws codecommit --profile <aws-profile> credential-helper $@
+#	UseHttpPath = true
+
+[init]
+	# For git>=2.28
+	defaultBranch = main
+
+# Include specific git configuration according to directory path
+[includeIf "gitdir:~/Code/Maxen/"]
+  path = .gitconfig-maxen
+
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
