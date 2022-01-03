@@ -4,7 +4,9 @@ alias t=tree
 alias p=popd
 alias cat=batcat
 alias dc=docker-compose
-alias find=fdfind
+
+alias fd=fdfind # better perf but different syntax
+alias find=bfs # colorized find
 
 code_path=/home/adam/Code
 
