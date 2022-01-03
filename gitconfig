@@ -31,7 +31,7 @@
 [alias]
 	l = log \
 		--graph \
-        	--oneline
+		--oneline
 	s = status
 	b = branch
 	c = commit
@@ -58,7 +58,7 @@
 
 # Include specific git configuration according to directory path
 [includeIf "gitdir:~/Code/Maxen/"]
-  path = .gitconfig-maxen
+	path = .gitconfig-maxen
 
 [filter "lfs"]
 	required = true
