@@ -1,6 +1,6 @@
 SHELL :=/bin/bash
 
-configs = aliases gitconfig gitconfig-maxen profile zshrc
+configs = aliases gitconfig gitconfig-maxen profile zshrc tmux.conf
 
 config_folder = $$(pwd)
 home_folder = $${HOME}
