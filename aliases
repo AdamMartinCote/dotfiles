@@ -7,7 +7,8 @@ function alias_if_installed () {
 	fi
 }
 
-alias p popd
+alias p=popd
+alias h=history
 
 alias_if_installed g git
 alias_if_installed tf terraform
