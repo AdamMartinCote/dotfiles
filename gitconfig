@@ -10,8 +10,6 @@
 	eol = lf
 
 [diff]
-	# Use better, descriptive initials (c[ommit], i[ndex], w[orking dir]) instead of a/b.
-	mnemonicPrefix = true
 	rename = true
 	tool = meld
 

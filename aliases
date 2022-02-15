@@ -9,6 +9,8 @@ function alias_if_installed () {
 
 alias p=popd
 alias h=history
+alias _=sudo
+alias la="ls -ahls"
 
 alias_if_installed g git
 alias_if_installed tf terraform
@@ -31,4 +33,6 @@ function _cdc {
 	_path_files -W "${code_path}"
 }
 
-compdef _cdc cdc
+if command -v compdef &>/dev/null; then
+    compdef _cdc cdc
+fi
