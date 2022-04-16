@@ -1,6 +1,6 @@
 SHELL :=/bin/bash
 
-configs = aliases gitconfig profile zshrc tmux.conf vimrc bashrc
+configs = aliases gitconfig profile zshrc tmux.conf vimrc bashrc zprofile
 
 config_folder = $$(pwd)
 home_folder = $${HOME}

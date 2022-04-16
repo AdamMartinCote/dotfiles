@@ -116,3 +116,9 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 # Allow Vagrant to use Windows features from WSL
 export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
+
+export PYENV_ROOT="${HOME}/.pyenv"
+export PATH="{PYENV_ROOT}/bin:$PATH"
+
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
