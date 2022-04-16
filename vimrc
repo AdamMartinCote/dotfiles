@@ -23,7 +23,7 @@ set comments=sl:/*,mb:\ *,elx:\ */
 set mouse=a
 set hlsearch
 set autochdir                       " current dir is always current working file dir
-set clipboard=unnamedplus           " yank/put uses system clipboard by default
+set clipboard=unnamed               " yank/put uses system clipboard by default
 
 let mapleader = ","
 set timeoutlen=10
