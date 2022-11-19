@@ -17,11 +17,16 @@ alias_if_installed tf terraform
 alias_if_installed t tree
 alias_if_installed cat batcat
 alias_if_installed dc docker-compose
+alias_if_installed d docker
+alias_if_installed n nerdctl
+
+# function doesn't work, nerdctl seems to be symlinked after Rancher Desktop is up
+alias k=kubectl
 
 alias_if_installed fd fdfind # better perf but different syntax
 alias_if_installed find bfs # colorized find
 
-code_path=/home/adam/Code
+code_path="${HOME}/Code"
 
 function cdc () {
 	cd "${code_path}/${1}"
@@ -36,3 +41,4 @@ function _cdc {
 if command -v compdef &>/dev/null; then
     compdef _cdc cdc
 fi
+

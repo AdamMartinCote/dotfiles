@@ -12,9 +12,9 @@ set number
 set relativenumber
 set autoindent
 set smartindent
-set tabstop=4
+set tabstop=2
 set expandtab
-set shiftwidth=4
+set shiftwidth=2
 set splitright
 set textwidth=120
 set t_co=256
@@ -24,6 +24,8 @@ set mouse=a
 set hlsearch
 set autochdir                       " current dir is always current working file dir
 set clipboard=unnamed               " yank/put uses system clipboard by default
+
+set syntax=on
 
 let mapleader = ","
 set timeoutlen=10
