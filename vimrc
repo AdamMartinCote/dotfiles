@@ -25,7 +25,7 @@ set hlsearch
 set autochdir                       " current dir is always current working file dir
 set clipboard=unnamed               " yank/put uses system clipboard by default
 
-set syntax=on
+syntax on
 
 let mapleader = ","
 set timeoutlen=10
