@@ -27,6 +27,8 @@ set clipboard=unnamed               " yank/put uses system clipboard by default
 
 syntax on
 
+set formatoptions-=t                " Prevent hard-wrapping while inserting
+
 let mapleader = ","
 set timeoutlen=10
 set ttimeoutlen=0
@@ -51,4 +53,6 @@ autocmd BufWritePre * %s/\s\+$//e
 
 colorscheme habamax
 
-colorscheme desert
+"display tabs as `>.`
+set list
+set listchars=tab:>.
