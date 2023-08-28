@@ -35,6 +35,7 @@
 	c = commit
 	a = add
 	d = diff
+	sw = switch
 	hide = update-index --assume-unchanged
 	unhide = update-index --no-assume-unchanged
 	unhide-all = update-index --really-refresh
