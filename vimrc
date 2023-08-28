@@ -20,7 +20,7 @@ set textwidth=120
 set t_co=256
 set showmatch                       " intelligent comments
 set comments=sl:/*,mb:\ *,elx:\ */
-set mouse=a
+"set mouse=a
 set hlsearch
 set autochdir                       " current dir is always current working file dir
 set clipboard=unnamed               " yank/put uses system clipboard by default
