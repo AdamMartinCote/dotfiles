@@ -14,6 +14,7 @@ alias la="ls -ahls"
 
 alias_if_installed g git
 alias_if_installed tf terraform
+alias_if_installed tg terragrunt
 alias_if_installed t tree
 alias_if_installed cat batcat
 alias_if_installed dc docker-compose
