@@ -43,3 +43,7 @@ if command -v compdef &>/dev/null; then
     compdef _cdc cdc
 fi
 
+if command -v exa &>/dev/null; then
+  alias l='exa -l'
+  alias ll='exa -l'
+fi
