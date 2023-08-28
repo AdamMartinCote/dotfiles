@@ -49,5 +49,6 @@ highlight Search ctermbg=lightblue ctermfg=black  term=underline
 " remove trailing whitespaces on save
 autocmd BufWritePre * %s/\s\+$//e
 
+colorscheme habamax
 
 colorscheme desert
