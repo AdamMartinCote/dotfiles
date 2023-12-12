@@ -102,9 +102,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# Allow Vagrant to use Windows features from WSL
-export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1"
-
 if command -v pyenv &>/dev/null; then
   export PYENV_ROOT="${HOME}/.pyenv"
   export PATH="{PYENV_ROOT}/bin:$PATH"
