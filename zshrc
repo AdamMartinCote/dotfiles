@@ -124,3 +124,13 @@ if command -v pyenv &>/dev/null; then
   eval "$(pyenv init --path)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+# Zoxide
+if command -v zoxide &>/dev/null; then
+  eval "$(zoxide init zsh --cmd=cd)"
+
+  # Keep default aliases on top of the override of `cd`
+  \builtin alias z=__zoxide_z
+  \builtin alias zi=__zoxide_zi
+fi
+
