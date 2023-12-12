@@ -125,6 +125,11 @@ if command -v pyenv &>/dev/null; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+# Start in Code directory unless running inside IDE
+if ! grep --quiet JETBRAINS <(env); then
+  \cd "${HOME}/Code"
+fi
+
 # Zoxide
 if command -v zoxide &>/dev/null; then
   eval "$(zoxide init zsh --cmd=cd)"
